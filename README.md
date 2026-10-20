@@ -3,7 +3,13 @@ Commodore 64 I2C breakout/adapter -board for cassette port.
 * External passthrough for powering 5V devices
 * Board has a place for a fuse. It is up to you to decide what kind of fuse you end up using  (100mA, for example).
   It is probably a good idea to do some current calculations before adding too many devices.
+* Board has I2C pull-up resistors so, remove those from connected I2C modules (some sensor etc. modules have them some don't)
 
+### Version 0.2:
+Cassette port sense-pin now used for I2C SCL and write-pin used for SDA.
+No need to touch solder jumpers. 
+
+### Version 0.1:
 Note 1: v0.1 requires that JP1 solder jumper is soldered (adds pull-up for SCLK on 5V side of the board).
 
 ![image](https://github.com/voutti/board_tape_i2c/blob/master/images/board_v0.1.jpg)
